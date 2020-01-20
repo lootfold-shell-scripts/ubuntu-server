@@ -12,6 +12,11 @@ fi
 
 tar -xvzf ~/installers/dotnet-sdk-2.1.607-linux-x64.tar.gz -C ~/sdk/dotnet
 
-echo "export DOTNET_ROOT=~/sdk/dotnet" >> ~/.profile
-
 sudo ln -s ~/sdk/dotnet/dotnet /usr/bin/dotnet
+
+# install most used tools
+
+dotnet tool install --global dotnet-sonarscanner
+
+echo "export DOTNET_ROOT=~/sdk/dotnet" >> ~/.zshrc
+echo 'PATH=$PATH:~/.dotnet/tools' >> ~/.zshrc
