@@ -1,5 +1,14 @@
-#!/bin/bash
+#!/bin/sh
 
-sudo apt update && sudo apt upgrade
+sudo apt update
 
-sudo apt install git emacs openssh-server openjdk-11-jre curl screen
+sudo apt upgrade
+
+sudo apt install \
+     git \
+     emacs \
+     openssh-server \
+     openjdk-11-jre \
+     curl \
+     screen \
+     net-tools \

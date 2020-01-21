@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # script to enable text mode in ubuntu desktop
 # edit /etc/default/grub
